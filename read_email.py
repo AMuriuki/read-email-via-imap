@@ -10,7 +10,7 @@ username = config('username')
 password = config('password')
 
 # outlook IMAP server
-imap_server = "outlook.office365.com"
+imap_server = config('imap_server')
 
 # create an IMAP4 CLASS with SSL
 imap = imaplib.IMAP4_SSL(imap_server)
@@ -93,7 +93,7 @@ for i in range(messages, messages-N, -1):
                         # extract content type of email
                         content_type = msg.get_content_type()
                         # get email body
-                        body = msg.get_payload(decode=True).decode()
+                        body = msg.get_payload(decode=True)
 
                         if content_type == "text/plain":
                             # print text email
