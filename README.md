@@ -29,7 +29,8 @@ pip install -r requirements.txt
 username="your email"
 password="your password"
 
-# See https://www.systoolsgroup.com/imap/ for your provider's IMAP server address
+# https://www.systoolsgroup.com/imap/ for your provider's IMAP server address
+
 imap_server="your email provider IMAP's server"
 ```
 >NB:  *From May 30, 2022, ​​Google no longer supports the use of third-party apps or devices which ask you to sign in to your Google Account using only your username and password. Therefore, this code won't work for Gmail accounts. If you want to interact with your Gmail account in Python, I'll be updating this repo shortly.*
