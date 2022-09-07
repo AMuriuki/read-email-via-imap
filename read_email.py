@@ -56,7 +56,7 @@ for i in range(messages, messages-N, -1):
             From, encoding = decode_header(msg.get("From"))[0]
 
             if isinstance(From, bytes):
-                From = subject.decode(encoding)
+                From = From.decode(encoding)
 
             print("Subject", subject)
             print("From", From)
