@@ -13,9 +13,11 @@ git clone https://github.com/AMuriuki/read-email-via-imap.git
 cd read-email-via-imap
 ```
 
-2. Create virtual env (optional)
+2. Create virtual env & activate it (optional)
 ```
 python3 -m venv venv
+
+. venv/bin/activate
 ```
 
 3. Install requirements
@@ -33,7 +35,7 @@ password="your password"
 
 imap_server="your email provider IMAP's server"
 ```
->NB:  *From May 30, 2022, ​​Google no longer supports the use of third-party apps or devices which ask you to sign in to your Google Account using only your username and password. Therefore, this code won't work for Gmail accounts. If you want to interact with your Gmail account in Python, I'll be updating this repo shortly.*
+>NB:  *From May 30, 2022, ​​Google no longer supports the use of third-party apps or devices which ask you to sign in to your Google Account using only your username and password. Therefore, this code won't work for Gmail accounts. If you want to interact with your Gmail account in Python, check out this [repo](https://github.com/AMuriuki/gmail-api-python).*
 
 
 
